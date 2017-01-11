@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo 'Looking for nvim in $PATH'
-command -v foo >/dev/null 2>&1 || { echo "Nvim required, but not foud.  Aborting." >&2; exit 1; }
+command -v nvim >/dev/null 2>&1 || { echo "Nvim required, but not foud.  Aborting." >&2; exit 1; }
 
 nvimdir="$XDG_CONFIG_HOME/nvim"
 if [ -d ${nvimdir} ];then
